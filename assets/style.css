@@ -39,3 +39,12 @@ ul {
     color: white;
     font-size: 20px;
 }
+
+/* -------------------------- Responsive -------------------------- */
+
+@media (min-width: 800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+    }
+}
