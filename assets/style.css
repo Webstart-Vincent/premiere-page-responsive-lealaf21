@@ -1,8 +1,6 @@
 body {
     padding: 20px;
-    background-color: #cc7c30;
-
-    font-family: "Metal Mania", sans-serif;
+    background-color: #faad69;
 }
 
 img {
@@ -23,28 +21,90 @@ img {
 }
 
 h1 {
-    border-top: 1px white solid;
-    margin: 5px 0px;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 p,
 ul {
-    color: white;
-    font-size: 20px;
+    color: #6c787a;
+    font-size: 15px;
 }
 
 /* -------------------------- Responsive -------------------------- */
 
-@media (min-width: 800px) {
+/* DESKTOP */
+@media screen and (min-width: 920px) {
     .wrapper {
-        display: grid;
-        grid-template-columns: 3fr 4fr;
+        display: flex;
+        align-items: center;
+        align-content: space-evenly;
+    }
+
+    img {
+        width: 70%;
     }
 }
+
+/* TABLETTE */
+@media screen and (max-width: 900px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        align-content: space-evenly;
+    }
+
+    img {
+        width: 90%;
+    }
+}
+
+/* TELEPHONE */
+@media screen and (max-width: 720px) {
+    .wrapper,
+    img {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+
+    img {
+        width: 70%;
+    }
+}
+
+/*
+
+img {
+    width: 90%;
+}
+
+@media (max-width: 720px) {
+    img {
+        width: calc(100% * 3 / 7);
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 4fr 4fr;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        font-size: medium;
+    }
+}
+*/
